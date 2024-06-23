@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import tkinter as tk
 
 def Hello1():
@@ -9,3 +10,10 @@ def Hello1():
     fam, name = entry.get().split()
     label.config(text=f'Привет, {fam}ка {name}!', fg="green",
                  font = ("Comic Sans MS", 20, "bold"), bg="yellow")
+=======
+def Hello1():
+    fam,name = entry.get().split()
+
+    label.config(text=f'Привет, {fam}ка {name}!', fg="green",
+                 font=("Comic Sans MS", 20, "bold"), bg="yellow")
+>>>>>>> Stashed changes
