@@ -9,7 +9,7 @@ def Hello():
 # .get — в переменную сохранится все содержимое поля для ввода сплошным элементом.
     fam,name = entry.get().split()
 
-    label.config(text=f'Привет, {fam} {name}!', fg="green", font = ("Comic Sans MS", 20, "bold"), bg="yellow")
+    label.config(text=f'Привет, {fam}чик {name}!', fg="green", font = ("Comic Sans MS", 20, "bold"), bg="yellow")
 
 root = tk.Tk()
 root.configure(bg='light grey')
