@@ -7,7 +7,7 @@ def Hello():
 # Прописываем это так: # name = str(entry.get())
 # name — переменная, внутри которой сохраняеся имя, entry — поле для ввода,
 # .get — в переменную сохранится все содержимое поля для ввода сплошным элементом.
-    fam,name = entry.get().split()
+    fam, name = entry.get().split()
 
     label.config(text=f'Привет, {fam}чик {name}!', fg="green", font = ("Comic Sans MS", 20, "bold"), bg="yellow")
 
@@ -27,6 +27,10 @@ entry.pack()
 # Создадим кнопку которая будет выводить приветствие. Для этого используем
 # переменную button, которая будет создавать виджет кнопки для запуска приветствия.
 button = tk.Button(root, text='Нажми кнопку после ввода ответа!', width=42, command=Hello, fg="white", font = (("Times New Roman"), 15), bg="brown")
+button.pack()
+
+
+button1 = tk.Button(root, text='Нажми кнопку после ввода ответа!', width=42, command=Hello1, fg="white", font = (("Times New Roman"), 15), bg="brown")
 button.pack()
 
 # Все закрепляем на экране
